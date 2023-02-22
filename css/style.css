@@ -9,4 +9,99 @@ img {
     max-width: 100%;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* Layout */
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    /* debug */
+    background-color: blue;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+
+}
+
+.play-bar {
+    /* debug */
+    background-color: red; 
+    width: 100%;
+    height: 100px;
+}
+
+.left-sidebar {
+    /* debug */
+    background-color: green;
+    width: 200px;
+    height: 100%;
+}
+
+/* .header {
+    background-color: blueviolet;
+    height: 100px;
+    width: calc(100% - 200px);
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    left: 200px;
+} */
+
+/* .container {
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    overflow-y: auto;
+} */
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header */
+.header-menu {
+    /* debug */
+    background-color: aquamarine;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu li {
+    list-style: none;
+}
+
+
+/* Left sidebar */
+
+.logo-small {
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .logo-big {
+        display: none;
+    }
+
+    .left-sidebar {
+        width: 50px;
+    }
+ 
+    .logo-small {
+        display: inline;
+    }
+    
+}
