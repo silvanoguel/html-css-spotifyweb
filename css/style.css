@@ -141,7 +141,7 @@ body {
 
 .install {
     margin-left: 20px;
-    margin-top: 190px;
+    margin-top: 170px;
 }
 
 .install-logo {
@@ -257,12 +257,12 @@ hr {
 /* Header */
 .header-menu {
     /* debug */
-    height: 50px;
     display: flex;
     justify-content: center;
     list-style-type: none;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .header-menu ul {
@@ -306,6 +306,22 @@ hr {
     .card {
         width: calc(100% / 4 - 10px);
     }
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+                                     
+}
+
+@media screen and (max-width:700px) {
+    .card {
+        width: calc(100% / 2 - 10px);
+    }
 
 }
 
@@ -341,8 +357,87 @@ hr {
 
 .play-bar-left {
     display: flex;
+    margin-left: 10px;
 }
 
 .play-bar-left img {
-    width: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.listened-song {
+    margin-right: 40px;
+}
+
+.listened-song-artist {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.listened-song-name {
+    margin-left: 10px;
+    font-size: 0.7rem;
+    color:#62656A
+}
+
+.listened-song-icons {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-regular.fa-heart {
+    color:#62656A;
+    padding-right: 15px;
+}
+
+.fa-regular.fa-folder {
+    color:#62656A;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+.meter { 
+    height: 5px;
+    width: 400px;
+    position: relative;
+    background: #555;
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.meter > span {
+    display: block;
+    height: 100%;
+    background-color: white;
+      
+}  
+
+.play-bar-central {
+    
+}
+
+.blaybar-icons {
+
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blaybar-icons i {
+    padding-right: 30px;
+}
+
+.fa-solid.fa-circle-play {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.progress-bar p {
+    font-size: 0.8rem;
 }
