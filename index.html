@@ -17,82 +17,143 @@
 <body>
     <div class="wrapper">
 
-
         <div class="content">
 
             <!-- Left sidebar -->
             <div class="left-sidebar">
-                <img src="img/logo.svg" alt="" class="logo-big">
-                <img src="img/logo-small.svg" alt="" class="logo-small">
-                <nav>
-                    <ul>
-                        <li>home</li>
-                        <li>home</li>
-                        <li>home</li>
-                    </ul>
-                </nav>
-
-                <div class="playlist">
-                    <ul>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                        <li>nome playlist</li>
-                    </ul>
-
-                </div>    
+                <div class="container">
+                    <img src="img/logo.svg" alt="" class="logo-big">
+                    <img src="img/logo-small.svg" alt="" class="logo-small">
+                    <nav>
+                        <ul>
+                            <li><img src="img/home.svg" alt="" class="home">Home</li>
+                            <li><img src="img/search.svg" alt="" class="search">Cerca</li>
+                            <li><img src="img/libreria.svg" alt="" class="library">La tua libreria</li>
+                        </ul>
+                    </nav>
+                
+                    <div class="playlist">
+                        <ul>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                            <li>nome playlist</li>
+                        </ul>
+                    </div>  
+                </div>
             
             </div>
             <!-- /Left sidebar -->
 
+           
             
             <!-- MAIN -->
-            <main class="container">
+            <main class="main">
+
+                <!-- header transparent -->
+                <div class="header">
+                   <a href="" class="btn">EFFETTUA L'UPGRADE</a>
+                </div>
+
+
                 <!-- Menu -->
                 <div class="header-menu">
                     <ul>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                        <li> <a href="">IN EVIDENZA</a> </li>
+                        <li> <a href="">PODCAST</a> </li>
+                        <li> <a href="">CLASSIFICHE</a> </li>
+                        <li> <a href="">GENERI E MOOD</a> </li>
+                        <li> <a href="">NUOVE USCITE</a> </li>
+                        <li> <a href="">SCOPRI</a> </li>
                     </ul>
                 </div>
                 <!-- /Menu -->
 
                 <!-- Recently played section-->
-                <section class="recently-played">
+                <section class="recently-played container pb2">
                     <h2>Recently Played</h2>
                     <div class="row">
-                        <div class="col">
+                        <div class="album-list">
                             <div class="card">
                                 <img src="img/metal_lifting.jpg" alt="">
+                                <div class="artist">
+                                    <p><b>Heavy Metal</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Subtitle</p>
+                                </div>
                             </div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
-                            <div class="card"></div>
+                            <div class="card">
+                                <img src="img/stranger.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Kyle Dixon & Michael Stein</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>A quiet place</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/split.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>Split</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/cure.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>A cure for welness</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/sinister.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>Sinister</b></p>
+                                </div>
+                                <div class="title">
+                                    <p>Subtitle</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <!-- /Recently played section-->
 
                 <!-- Created section -->
-                <section class="created">
-                    <h2>Crteato per John Doe</h2>
-                    <h5>piu ascolti</h5>
+                <section class="created container pb2">
+                    <h2>Creato per John Doe</h2>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
                     <div class="row">
-                        <div class="col">
+                        <div class="album-list">
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <img src="img/radar.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>Release Radar</b></p>
+                                </div>
+
                             </div>
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <div class="artist">
+                                    <p><b>Daily Mix 1</b></p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -100,16 +161,16 @@
                 <!-- /Created section -->
                
                 <!-- Popolar artists section -->
-                <section class="popolar">
+                <section class="popolar container pb2">
                     <h2>Artisti più popolari</h2>
-                    <h5>piu ascolti</h5>
+                    <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
                     <div class="row">
-                        <div class="col">
+                        <div class="album-list">
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <img src="img/youg.jpeg" alt="">
                             </div>
                             <div class="card">
-                                <img src="img/metal_lifting.jpg" alt="">
+                                <img src="img/einaudi.jpeg" alt="">
                             </div>
                         </div>
                     </div>
@@ -118,19 +179,38 @@
 
             </main>
             <!-- /MAIN -->
-
-
-
-
-        
            
 
         </div>
 
 
-
         <div class="play-bar">
-            play-bar
+            <div class="play-bar-left">
+                <img src="img/sinister.jpeg" alt="">
+                <div>
+                    <p><b>Sinister</b></p>
+                    <p>Brano Nome</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+
+            <div class="play-bar-central">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-solid fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+
+            <div class="play-bar-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+
+            </div>
+
+
         </div>
 
 
