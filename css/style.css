@@ -358,6 +358,7 @@ hr {
 .play-bar-left {
     display: flex;
     margin-left: 10px;
+    width: calc(100% / 3);
 }
 
 .play-bar-left img {
@@ -396,6 +397,10 @@ hr {
     color:#62656A;
 }
 
+.play-bar-central {
+    width: calc(100% / 3);
+}
+
 .progress-bar {
     display: flex;
     align-items: center;
@@ -419,9 +424,6 @@ hr {
       
 }  
 
-.play-bar-central {
-    
-}
 
 .blaybar-icons {
 
@@ -440,4 +442,30 @@ hr {
 
 .progress-bar p {
     font-size: 0.8rem;
+}
+
+.meter-short { 
+    height: 5px;
+    width: 200px;
+    position: relative;
+    background: #555;
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+    margin-right: 20px;
+}
+
+.meter-short > span {
+    display: block;
+    height: 100%;
+    background-color: white;
+      
+}  
+
+.play-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    width: calc(100% / 3);
+    justify-content: flex-end;
 }
